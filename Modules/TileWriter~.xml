@@ -1,0 +1,1569 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.dtd" >
+   <PATCH nodename="C:\Workshop VVVVJS Games\Modules\TileWriter.v4p" systemname="TileWriter" filename="C:\Workshop VVVVJS Games\TileWriter.v4p" scrollx="0" scrolly="3600">
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="7365" top="1920" width="1335" height="300">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7365" top="1920" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="leafes">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="NameSpace">
+   </PIN>
+   </NODE>
+   <NODE systemname="FlipFlop (Animation)" nodename="FlipFlop (Animation)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="4785" top="3150" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="5" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4695" top="1920" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4695" top="1920" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Start">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean)" filename="" nodename="OR (Boolean)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="5400" top="2625" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5385" top="1920" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5385" top="1920" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Reset">
+   </PIN>
+   </NODE>
+   <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="9285" top="7425" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" slicecount="65" visible="1" values="Crystal3\crystal-plant-join.png,Crystal3\crystal-plant1.png,Crystal3\crystal-plant10.png,Crystal3\crystal-plant11.png,Crystal3\crystal-plant12.png,Crystal3\crystal-plant13.png,Crystal3\crystal-plant14.png,Crystal3\crystal-plant15.png,Crystal3\crystal-plant16.png,Crystal3\crystal-plant17.png,Crystal3\crystal-plant18.png,Crystal3\crystal-plant19.png,Crystal3\crystal-plant2.png,Crystal3\crystal-plant20.png,Crystal3\crystal-plant21.png,Crystal3\crystal-plant22.png,Crystal3\crystal-plant23.png,Crystal3\crystal-plant24.png,Crystal3\crystal-plant25.png,Crystal3\crystal-plant26.png,Crystal3\crystal-plant27.png,Crystal3\crystal-plant28.png,Crystal3\crystal-plant29.png,Crystal3\crystal-plant3.png,Crystal3\crystal-plant30.png,Crystal3\crystal-plant31.png,Crystal3\crystal-plant32.png,Crystal3\crystal-plant33.png,Crystal3\crystal-plant34.png,Crystal3\crystal-plant35.png,Crystal3\crystal-plant36.png,Crystal3\crystal-plant37.png,Crystal3\crystal-plant38.png,Crystal3\crystal-plant39.png,Crystal3\crystal-plant4.png,Crystal3\crystal-plant40.png,Crystal3\crystal-plant41.png,Crystal3\crystal-plant42.png,Crystal3\crystal-plant43.png,Crystal3\crystal-plant44.png,Crystal3\crystal-plant45.png,Crystal3\crystal-plant46.png,Crystal3\crystal-plant47.png,Crystal3\crystal-plant48.png,Crystal3\crystal-plant49.png,Crystal3\crystal-plant5.png,Crystal3\crystal-plant50.png,Crystal3\crystal-plant51.png,Crystal3\crystal-plant52.png,Crystal3\crystal-plant53.png,Crystal3\crystal-plant54.png,Crystal3\crystal-plant55.png,Crystal3\crystal-plant56.png,Crystal3\crystal-plant57.png,Crystal3\crystal-plant58.png,Crystal3\crystal-plant59.png,Crystal3\crystal-plant6.png,Crystal3\crystal-plant60.png,Crystal3\crystal-plant61.png,Crystal3\crystal-plant62.png,Crystal3\crystal-plant63.png,Crystal3\crystal-plant64.png,Crystal3\crystal-plant7.png,Crystal3\crystal-plant8.png,Crystal3\crystal-plant9.png">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Reload" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Is Valid" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (DX11 TempTarget)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11 TempTarget)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="8790" top="10695" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Buffers" visible="1">
+   </PIN>
+   <PIN pinname="Target Format" slicecount="1" values="R16G16B16A16_Float">
+   </PIN>
+   <PIN pinname="Background Color" slicecount="1" values="|0.00000,0.00000,0.00000,0.00000|">
+   </PIN>
+   <PIN pinname="Texture SizeXY" visible="1" slicecount="2" values="1024,1024">
+   </PIN>
+   </NODE>
+   <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="8955" top="7830" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="9075" top="3660" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="TranslateX" visible="1">
+   </PIN>
+   <PIN pinname="TranslateY" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="ScaleX" visible="1" slicecount="1" values="0.25">
+   </PIN>
+   <PIN pinname="ScaleY" visible="1" slicecount="1" values="0.25">
+   </PIN>
+   </NODE>
+   <NODE systemname="Cross (2d)" nodename="Cross (2d)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="9225" top="3120" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X Out" visible="1">
+   </PIN>
+   <PIN pinname="Y Out" visible="1">
+   </PIN>
+   <PIN pinname="X In" visible="1">
+   </PIN>
+   <PIN pinname="Y In" visible="1" slicecount="32" values="-0.96875,-0.90625,-0.84375,-0.78125,-0.71875,-0.65625,-0.59375,-0.53125,-0.46875,-0.40625,-0.34375,-0.28125,-0.21875,-0.15625,-0.09375,-0.03125,0.03125,0.09375,0.15625,0.21875,0.28125,0.34375,0.40625,0.46875,0.53125,0.59375,0.65625,0.71875,0.78125,0.84375,0.90625,0.96875">
+   </PIN>
+   </NODE>
+   <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="9225" top="2640" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Spread Count" slicecount="1" visible="1" values="32">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Alignment" slicecount="1" values="Centered">
+   </PIN>
+   </NODE>
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="12135" top="2640" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="4">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="8970" top="7065" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Mode" slicecount="1" values="Blend">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="19" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="11250" top="9330" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11250" top="9330" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="4096,1024">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Writer (DX11.Texture 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Writer (DX11.Texture 2d)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="7155" top="14460" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Format" slicecount="1" values="Png">
+   </PIN>
+   <PIN pinname="Write" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Filename" visible="1" slicecount="1" values="crystal-rock-join.png">
+   </PIN>
+   <PIN pinname="Valid" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="7530" top="11535" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="-join">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" slicecount="1" values=".png">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="22" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="6195" top="1920" width="1080" height="330">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6195" top="1920" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|..\Isometric Assets\Output\leafes|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Folder">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="25">
+   <BOUNDS type="Node" left="7335" top="12105" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="DosPath">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="26" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8865" top="13440" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8865" top="13440" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Write">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="28">
+   <BOUNDS type="Node" left="3885" top="7740" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Down Edge" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Select (String)" nodename="Select (String)" componentmode="Hidden" id="32">
+   <BOUNDS type="Node" left="9270" top="6735" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" visible="1" slicecount="512" values="1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="512" values="|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000001.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000002.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000003.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000004.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000005.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000006.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000007.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000008.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000009.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000010.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000011.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000012.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000013.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000014.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000015.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000016.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000017.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000018.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000019.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000020.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000021.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000022.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000023.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000024.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000025.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000026.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000027.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000028.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000029.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000030.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000031.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000032.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000033.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000034.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000035.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000036.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000037.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000038.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000039.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000040.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000041.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000042.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000043.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000044.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000045.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000046.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000047.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000048.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000049.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000050.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000051.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000052.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000053.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000054.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000055.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000056.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000057.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000058.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000059.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000060.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000061.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000062.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000063.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000064.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000065.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000066.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000067.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000068.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000069.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000070.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000071.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000072.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000073.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000074.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000075.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000076.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000077.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000078.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000079.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000080.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000081.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000082.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000083.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000084.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000085.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000086.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000087.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000088.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000089.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000090.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000091.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000092.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000093.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000094.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000095.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000096.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000097.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000098.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000099.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000100.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000101.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000102.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000103.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000104.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000105.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000106.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000107.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000108.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000109.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000110.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000111.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000112.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000113.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000114.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000115.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000116.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000117.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000118.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000119.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000120.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000121.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000122.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000123.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000124.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000125.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000126.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000127.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000128.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000129.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000130.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000131.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000132.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000133.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000134.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000135.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000136.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000137.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000138.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000139.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000140.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000141.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000142.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000143.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000144.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000145.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000146.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000147.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000148.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000149.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000150.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000151.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000152.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000153.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000154.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000155.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000156.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000157.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000158.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000159.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000160.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000161.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000162.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000163.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000164.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000165.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000166.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000167.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000168.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000169.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000170.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000171.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000172.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000173.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000174.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000175.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000176.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000177.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000178.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000179.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000180.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000181.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000182.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000183.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000184.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000185.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000186.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000187.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000188.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000189.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000190.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000191.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000192.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000193.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000194.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000195.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000196.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000197.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000198.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000199.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000200.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000201.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000202.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000203.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000204.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000205.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000206.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000207.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000208.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000209.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000210.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000211.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000212.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000213.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000214.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000215.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000216.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000217.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000218.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000219.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000220.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000221.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000222.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000223.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000224.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000225.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000226.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000227.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000228.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000229.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000230.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000231.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000232.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000233.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000234.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000235.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000236.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000237.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000238.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000239.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000240.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000241.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000242.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000243.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000244.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000245.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000246.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000247.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000248.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000249.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000250.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000251.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000252.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000253.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000254.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000255.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000256.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000001.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000002.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000003.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000004.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000005.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000006.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000007.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000008.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000009.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000010.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000011.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000012.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000013.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000014.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000015.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000016.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000017.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000018.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000019.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000020.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000021.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000022.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000023.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000024.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000025.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000026.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000027.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000028.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000029.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000030.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000031.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000032.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000033.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000034.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000035.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000036.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000037.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000038.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000039.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000040.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000041.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000042.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000043.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000044.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000045.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000046.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000047.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000048.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000049.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000050.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000051.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000052.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000053.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000054.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000055.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000056.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000057.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000058.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000059.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000060.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000061.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000062.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000063.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000064.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000065.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000066.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000067.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000068.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000069.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000070.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000071.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000072.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000073.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000074.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000075.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000076.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000077.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000078.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000079.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000080.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000081.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000082.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000083.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000084.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000085.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000086.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000087.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000088.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000089.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000090.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000091.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000092.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000093.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000094.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000095.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000096.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000097.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000098.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000099.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000100.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000101.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000102.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000103.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000104.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000105.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000106.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000107.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000108.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000109.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000110.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000111.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000112.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000113.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000114.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000115.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000116.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000117.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000118.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000119.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000120.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000121.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000122.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000123.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000124.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000125.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000126.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000127.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000128.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000129.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000130.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000131.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000132.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000133.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000134.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000135.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000136.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000137.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000138.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000139.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000140.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000141.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000142.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000143.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000144.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000145.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000146.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000147.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000148.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000149.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000150.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000151.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000152.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000153.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000154.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000155.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000156.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000157.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000158.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000159.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000160.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000161.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000162.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000163.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000164.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000165.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000166.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000167.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000168.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000169.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000170.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000171.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000172.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000173.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000174.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000175.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000176.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000177.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000178.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000179.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000180.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000181.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000182.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000183.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000184.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000185.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000186.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000187.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000188.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000189.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000190.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000191.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000192.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000193.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000194.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000195.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000196.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000197.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000198.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000199.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000200.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000201.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000202.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000203.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000204.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000205.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000206.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000207.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000208.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000209.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000210.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000211.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000212.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000213.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000214.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000215.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000216.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000217.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000218.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000219.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000220.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000221.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000222.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000223.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000224.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000225.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000226.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000227.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000228.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000229.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000230.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000231.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000232.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000233.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000234.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000235.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000236.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000237.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000238.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000239.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000240.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000241.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000242.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000243.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000244.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000245.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000246.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000247.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000248.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000249.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000250.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000251.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000252.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000253.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000254.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000255.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000256.Png|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean)" filename="" nodename="OR (Boolean)" componentmode="Hidden" id="33">
+   <BOUNDS type="Node" left="7890" top="13800" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="34">
+   <BOUNDS type="Node" left="3780" top="570" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3780" top="570" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Animate">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Counter (Animation Legacy)" nodename="Counter (Animation)" componentmode="Hidden" id="35">
+   <BOUNDS type="Node" left="2295" top="2940" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Up" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" visible="1" values="64">
+   </PIN>
+   <PIN pinname="Overflow" visible="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Mode" slicecount="1" values="Wrap">
+   </PIN>
+   </NODE>
+   <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="37">
+   <BOUNDS type="Node" left="10290" top="2640" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Spread Count" slicecount="1" visible="1" values="8">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Alignment" slicecount="1" values="Centered">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="38" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="10110" top="1755" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10110" top="1755" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="8">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="CountX">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="39" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="11205" top="1950" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11205" top="1950" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="8">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="CountY">
+   </PIN>
+   </NODE>
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="41">
+   <BOUNDS type="Node" left="11475" top="2640" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="32">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="43">
+   <BOUNDS type="Node" left="10185" top="10005" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="44" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="10425" top="9330" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10425" top="9330" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="1024,1024">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="45">
+   <BOUNDS type="Node" left="9615" top="2280" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="47">
+   <BOUNDS type="Node" left="2265" top="3540" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="48">
+   <BOUNDS type="Node" left="2265" top="4080" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="51">
+   <BOUNDS type="Node" left="4650" top="4800" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="32">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="52">
+   <BOUNDS type="Node" left="5415" top="5205" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="8">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="53">
+   <BOUNDS type="Node" left="4665" top="5625" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Counter (Animation Legacy)" nodename="Counter (Animation)" componentmode="Hidden" id="54">
+   <BOUNDS type="Node" left="1770" top="5085" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Up" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Mode" slicecount="1" values="Clamp">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Overflow" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Increment" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Underflow" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="55">
+   <BOUNDS type="Node" left="4770" top="4290" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="56" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture In|">
+   </PIN>
+   <BOUNDS type="Box" left="870" top="7010" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="870" top="7010" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="57" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Perspective Index|">
+   </PIN>
+   <BOUNDS type="Box" left="3705" top="12075" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3705" top="12075" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="35" srcpinname="Output" dstnodeid="47" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Output" dstnodeid="48" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="55" srcpinname="Output 1" dstnodeid="35" dstpinname="Up">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="35" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Output" dstnodeid="51" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="51" srcpinname="Output" dstnodeid="53" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="54" srcpinname="Output" dstnodeid="52" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="4" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Layer" dstnodeid="10" dstpinname="Layer">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="20" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Render State" dstnodeid="11" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Transform Out" dstnodeid="11" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Texture Out" dstnodeid="11" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="25" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Output" dstnodeid="25" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="21" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="32" srcpinname="Output" dstnodeid="9" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="X Out" dstnodeid="12" dstpinname="TranslateX">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Y Out" dstnodeid="12" dstpinname="TranslateY">
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Output" dstnodeid="12" dstpinname="ScaleX">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="13" dstpinname="X In">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Output" dstnodeid="13" dstpinname="Y In">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="Output" dstnodeid="14" dstpinname="Spread Count">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="45" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Y Output Value" dstnodeid="45" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Spread Count">
+   </LINK>
+   <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="43" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="43" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="Output" dstnodeid="41" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Input 2">
+   </LINK>
+   <BOUNDS type="Window" left="2775" top="3690" width="19500" height="13710">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="Levels (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\Levels.tfx" nodename="Levels (DX11.TextureFX)" componentmode="Hidden" id="59">
+   <BOUNDS type="Node" left="10035" top="11430" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="GammaXYZW" slicecount="4" values="2,2,2,2">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Buffers" dstnodeid="59" dstpinname="Texture In">
+   </LINK>
+   <NODE systemname="OR (Boolean)" filename="" nodename="OR (Boolean)" componentmode="Hidden" id="63">
+   <BOUNDS type="Node" left="9885" top="4755" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="64" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="10260" top="4095" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10260" top="4095" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Update">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="64" srcpinname="Y Output Value" dstnodeid="63" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="Output" dstnodeid="9" dstpinname="Reload">
+   </LINK>
+   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="67">
+   <BOUNDS type="Node" left="1770" top="4680" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="48" srcpinname="Up Edge" dstnodeid="67" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="67" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="67" srcpinname="Output" dstnodeid="54" dstpinname="Up">
+   </LINK>
+   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="68">
+   <BOUNDS type="Node" left="3570" top="2490" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="32">
+   </PIN>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="64">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="68" srcpinname="Output" dstnodeid="35" dstpinname="Maximum">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="68" dstpinname="Switch">
+   </LINK>
+   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="69">
+   <BOUNDS type="Node" left="3705" top="11415" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="35" srcpinname="Output" dstnodeid="69" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="69" srcpinname="Output" dstnodeid="57" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="54" srcpinname="Output" dstnodeid="69" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="69" dstpinname="Switch">
+   </LINK>
+   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="70">
+   <BOUNDS type="Node" left="3900" top="6045" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="64">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="70" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="71" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2175" top="855" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2175" top="855" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="64">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="68" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="70" dstpinname="Switch">
+   </LINK>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="72">
+   <BOUNDS type="Node" left="4140" top="5550" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="16">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="35" srcpinname="Output" dstnodeid="72" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="72" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="72" srcpinname="Output" dstnodeid="70" dstpinname="Input 1">
+   </LINK>
+   <NODE id="8" systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden">
+   <BOUNDS type="Node" left="3885" top="6420" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="3885" top="6420">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="70" srcpinname="Output" dstnodeid="8" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output 1" dstnodeid="6" dstpinname="Input 2">
+   <LINKPOINT x="6270" y="6675">
+   </LINKPOINT>
+   <LINKPOINT x="6270" y="2655">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="75">
+   <BOUNDS type="Node" left="390" top="8100" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="43" dstpinname="Switch">
+   </LINK>
+   <NODE systemname="Writer11TextureNormals" filename="Writer11TextureNormals.v4p" nodename="Writer11TextureNormals.v4p" componentmode="Hidden" id="77">
+   <BOUNDS type="Node" left="360" top="12435" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Format - Enum" slicecount="1" values="Png">
+   </PIN>
+   <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="DoSave" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Framerate (FPS)" visible="1">
+   </PIN>
+   <PIN pinname="Path" visible="1" slicecount="1" values="..\GenCreature1">
+   </PIN>
+   <PIN pinname="Filename Prefix" visible="1" slicecount="1" values="GenSeries1_0">
+   </PIN>
+   <PIN pinname="Normals In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <BOUNDS type="Window" left="12750" top="4560" width="11820" height="12000">
+   </BOUNDS>
+   <PIN pinname="EnableNormals" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="75" srcpinname="Output" dstnodeid="77" dstpinname="Texture In">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="78" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1905" top="10545" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1905" top="10545" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="24">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Framerate (FPS)|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="78" srcpinname="Y Output Value" dstnodeid="77" dstpinname="Framerate (FPS)">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="77" dstpinname="Path">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="79" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2400" top="11370" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2400" top="11370" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Subframe">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="21">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="35" srcpinname="Output" dstnodeid="79" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Y Output Value" dstnodeid="51" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="52" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="82" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="10335" top="14550" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10335" top="14550" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Has Loaded|">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Directory (File)" filename="%VVVV%\addonpack\lib\nodes\plugins\Directory.dll" nodename="Directory (File)" componentmode="Hidden" id="83">
+   <BOUNDS type="Node" left="12165" top="3810" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Directory" visible="1">
+   </PIN>
+   <PIN pinname="Exists" visible="1">
+   </PIN>
+   <PIN pinname="Create" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="83" dstpinname="Directory">
+   </LINK>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="84">
+   <BOUNDS type="Node" left="12165" top="4365" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="83" srcpinname="Exists" dstnodeid="84" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="88" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="13320" top="5445" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13320" top="5445" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Exists">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="89">
+   <BOUNDS type="Node" left="4785" top="3720" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="89" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Output" dstnodeid="55" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Output" dstnodeid="75" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Output" dstnodeid="77" dstpinname="DoSave">
+   </LINK>
+   <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="90">
+   <BOUNDS type="Node" left="13065" top="4380" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="84" srcpinname="Output" dstnodeid="90" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="90" srcpinname="Output 1" dstnodeid="83" dstpinname="Create">
+   </LINK>
+   <LINK srcnodeid="83" srcpinname="Exists" dstnodeid="88" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="54" dstpinname="Reset">
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="94">
+   <BOUNDS type="Node" left="1140" top="10545" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="-">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="94" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="94" srcpinname="Output" dstnodeid="77" dstpinname="Filename Prefix">
+   </LINK>
+   <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="24">
+   <BOUNDS type="Node" left="9225" top="5280" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Directory" visible="1" slicecount="1" values="..\Output\RobotSeries2Normals_365">
+   </PIN>
+   <PIN pinname="Update" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Filenames" visible="1">
+   </PIN>
+   <PIN pinname="Include Subdirectories" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="63" srcpinname="Output" dstnodeid="24" dstpinname="Update">
+   </LINK>
+   <NODE systemname="AvoidNIL (String)" filename="%VVVV%\lib\nodes\modules\String\AvoidNIL (String).v4p" nodename="AvoidNIL (String)" componentmode="Hidden" id="95">
+   <BOUNDS type="Node" left="9375" top="5655" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Filenames" dstnodeid="95" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="96">
+   <BOUNDS type="Node" left="12150" top="7665" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Is Valid" dstnodeid="96" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="97">
+   <BOUNDS type="Node" left="12345" top="7095" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="38" srcpinname="Y Output Value" dstnodeid="97" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="97" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="98">
+   <BOUNDS type="Node" left="12150" top="8160" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="96" srcpinname="Count" dstnodeid="98" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="97" srcpinname="Output" dstnodeid="98" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="100">
+   <BOUNDS type="Node" left="7860" top="12570" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="98" srcpinname="Output" dstnodeid="100" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="MonoFlop (Animation Framebased)" filename="%VVVV%\addonpack\lib\nodes\plugins\MonoFlop.dll" nodename="MonoFlop (Animation Framebased)" componentmode="Hidden" id="101">
+   <BOUNDS type="Node" left="9705" top="13125" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Frames" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Set" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="102">
+   <BOUNDS type="Node" left="9705" top="13530" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Down Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="101" srcpinname="Output" dstnodeid="102" dstpinname="Input">
+   </LINK>
+   <NODE systemname="MonoFlop (Animation Framebased)" nodename="MonoFlop (Animation Framebased)" componentmode="Hidden" id="29" filename="%VVVV%\addonpack\lib\nodes\plugins\MonoFlop.dll">
+   <BOUNDS type="Node" left="4530" top="8325" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Inverse Output" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Frames" slicecount="1" values="10">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="Down Edge" dstnodeid="29" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Output" dstnodeid="100" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Output" dstnodeid="63" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="103">
+   <BOUNDS type="Node" left="7875" top="12930" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="103" srcpinname="Up Edge" dstnodeid="33" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Output" dstnodeid="12" dstpinname="ScaleY">
+   </LINK>
+   <LINK srcnodeid="52" srcpinname="Output" dstnodeid="53" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="Preview (DX11.Texture)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Preview (DX11.Texture)" componentmode="InAWindow" id="106">
+   <BOUNDS type="Node" left="12135" top="11565" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12135" top="11565" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="18165" top="6975" width="10635" height="7560">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="59" srcpinname="Texture Out" dstnodeid="20" dstpinname="Texture In">
+   </LINK>
+   <NODE systemname="MonoFlop (Animation Framebased)" nodename="MonoFlop (Animation Framebased)" componentmode="Hidden" id="27" filename="%VVVV%\addonpack\lib\nodes\plugins\MonoFlop.dll">
+   <BOUNDS type="Node" left="3885" top="7170" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Inverse Output" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Frames" slicecount="1" values="5">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="27" srcpinname="Output" dstnodeid="28" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output 1" dstnodeid="27" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="100" srcpinname="Output" dstnodeid="103" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="43" srcpinname="Output" dstnodeid="10" dstpinname="Texture SizeXY">
+   </LINK>
+   <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="107">
+   <BOUNDS type="Node" left="10350" top="13920" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="102" srcpinname="Down Edge" dstnodeid="107" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="107" srcpinname="Output 1" dstnodeid="82" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Output" dstnodeid="20" dstpinname="Write">
+   </LINK>
+   <LINK srcnodeid="103" srcpinname="Up Edge" dstnodeid="101" dstpinname="Set">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="108" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="1455" top="11715" width="585" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1455" top="11715" width="585" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="writer">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE id="111" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Normals In|">
+   </PIN>
+   <BOUNDS type="Box" left="1815" top="7505" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1815" top="7505" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="112">
+   <BOUNDS type="Node" left="1305" top="8040" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="89" srcpinname="Output" dstnodeid="112" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="111" srcpinname="Output Node" dstnodeid="112" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="Sift (String)" nodename="Sift (String)" componentmode="Hidden" id="113">
+   <BOUNDS type="Node" left="10815" top="5820" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Filter" slicecount="1" visible="1" values="Normals-">
+   </PIN>
+   <PIN pinname="Comparison" slicecount="1" values="ContainsAll">
+   </PIN>
+   <PIN pinname="Hits" visible="1">
+   </PIN>
+   <PIN pinname="Input Index" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="95" srcpinname="Output" dstnodeid="113" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="115" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="11010" top="5355" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11010" top="5355" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Normals-">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="115" srcpinname="Output String" dstnodeid="113" dstpinname="Filter">
+   </LINK>
+   <NODE systemname="Select (String)" nodename="Select (String)" componentmode="Hidden" id="117">
+   <BOUNDS type="Node" left="10680" top="6675" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" visible="1" slicecount="512" values="1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="512" values="|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000001.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000002.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000003.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000004.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000005.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000006.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000007.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000008.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000009.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000010.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000011.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000012.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000013.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000014.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000015.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000016.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000017.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000018.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000019.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000020.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000021.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000022.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000023.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000024.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000025.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000026.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000027.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000028.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000029.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000030.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000031.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000032.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000033.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000034.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000035.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000036.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000037.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000038.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000039.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000040.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000041.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000042.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000043.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000044.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000045.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000046.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000047.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000048.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000049.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000050.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000051.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000052.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000053.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000054.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000055.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000056.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000057.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000058.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000059.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000060.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000061.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000062.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000063.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000064.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000065.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000066.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000067.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000068.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000069.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000070.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000071.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000072.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000073.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000074.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000075.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000076.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000077.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000078.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000079.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000080.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000081.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000082.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000083.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000084.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000085.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000086.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000087.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000088.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000089.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000090.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000091.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000092.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000093.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000094.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000095.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000096.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000097.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000098.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000099.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000100.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000101.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000102.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000103.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000104.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000105.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000106.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000107.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000108.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000109.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000110.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000111.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000112.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000113.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000114.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000115.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000116.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000117.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000118.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000119.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000120.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000121.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000122.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000123.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000124.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000125.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000126.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000127.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000128.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000129.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000130.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000131.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000132.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000133.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000134.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000135.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000136.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000137.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000138.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000139.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000140.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000141.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000142.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000143.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000144.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000145.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000146.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000147.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000148.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000149.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000150.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000151.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000152.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000153.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000154.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000155.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000156.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000157.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000158.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000159.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000160.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000161.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000162.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000163.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000164.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000165.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000166.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000167.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000168.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000169.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000170.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000171.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000172.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000173.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000174.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000175.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000176.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000177.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000178.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000179.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000180.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000181.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000182.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000183.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000184.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000185.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000186.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000187.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000188.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000189.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000190.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000191.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000192.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000193.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000194.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000195.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000196.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000197.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000198.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000199.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000200.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000201.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000202.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000203.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000204.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000205.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000206.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000207.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000208.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000209.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000210.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000211.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000212.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000213.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000214.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000215.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000216.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000217.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000218.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000219.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000220.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000221.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000222.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000223.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000224.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000225.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000226.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000227.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000228.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000229.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000230.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000231.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000232.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000233.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000234.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000235.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000236.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000237.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000238.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000239.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000240.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000241.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000242.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000243.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000244.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000245.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000246.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000247.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000248.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000249.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000250.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000251.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000252.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000253.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000254.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000255.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\Normals-RobotSeries1_359-000256.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000001.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000002.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000003.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000004.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000005.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000006.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000007.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000008.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000009.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000010.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000011.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000012.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000013.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000014.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000015.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000016.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000017.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000018.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000019.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000020.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000021.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000022.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000023.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000024.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000025.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000026.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000027.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000028.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000029.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000030.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000031.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000032.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000033.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000034.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000035.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000036.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000037.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000038.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000039.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000040.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000041.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000042.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000043.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000044.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000045.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000046.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000047.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000048.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000049.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000050.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000051.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000052.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000053.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000054.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000055.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000056.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000057.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000058.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000059.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000060.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000061.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000062.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000063.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000064.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000065.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000066.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000067.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000068.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000069.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000070.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000071.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000072.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000073.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000074.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000075.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000076.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000077.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000078.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000079.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000080.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000081.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000082.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000083.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000084.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000085.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000086.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000087.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000088.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000089.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000090.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000091.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000092.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000093.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000094.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000095.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000096.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000097.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000098.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000099.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000100.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000101.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000102.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000103.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000104.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000105.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000106.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000107.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000108.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000109.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000110.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000111.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000112.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000113.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000114.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000115.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000116.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000117.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000118.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000119.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000120.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000121.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000122.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000123.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000124.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000125.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000126.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000127.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000128.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000129.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000130.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000131.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000132.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000133.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000134.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000135.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000136.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000137.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000138.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000139.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000140.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000141.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000142.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000143.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000144.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000145.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000146.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000147.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000148.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000149.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000150.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000151.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000152.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000153.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000154.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000155.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000156.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000157.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000158.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000159.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000160.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000161.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000162.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000163.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000164.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000165.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000166.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000167.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000168.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000169.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000170.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000171.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000172.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000173.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000174.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000175.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000176.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000177.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000178.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000179.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000180.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000181.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000182.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000183.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000184.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000185.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000186.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000187.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000188.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000189.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000190.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000191.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000192.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000193.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000194.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000195.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000196.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000197.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000198.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000199.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000200.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000201.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000202.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000203.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000204.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000205.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000206.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000207.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000208.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000209.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000210.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000211.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000212.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000213.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000214.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000215.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000216.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000217.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000218.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000219.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000220.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000221.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000222.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000223.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000224.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000225.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000226.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000227.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000228.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000229.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000230.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000231.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000232.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000233.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000234.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000235.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000236.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000237.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000238.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000239.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000240.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000241.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000242.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000243.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000244.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000245.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000246.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000247.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000248.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000249.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000250.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000251.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000252.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000253.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000254.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000255.Png|,|C:\VVVV\VVVV_Projekte\Isometric Assets\Output\RobotSeries1_359\RobotSeries1_359-000256.Png|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="121">
+   <BOUNDS type="Node" left="10695" top="7470" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" slicecount="65" visible="1" values="Crystal3\crystal-plant-join.png,Crystal3\crystal-plant1.png,Crystal3\crystal-plant10.png,Crystal3\crystal-plant11.png,Crystal3\crystal-plant12.png,Crystal3\crystal-plant13.png,Crystal3\crystal-plant14.png,Crystal3\crystal-plant15.png,Crystal3\crystal-plant16.png,Crystal3\crystal-plant17.png,Crystal3\crystal-plant18.png,Crystal3\crystal-plant19.png,Crystal3\crystal-plant2.png,Crystal3\crystal-plant20.png,Crystal3\crystal-plant21.png,Crystal3\crystal-plant22.png,Crystal3\crystal-plant23.png,Crystal3\crystal-plant24.png,Crystal3\crystal-plant25.png,Crystal3\crystal-plant26.png,Crystal3\crystal-plant27.png,Crystal3\crystal-plant28.png,Crystal3\crystal-plant29.png,Crystal3\crystal-plant3.png,Crystal3\crystal-plant30.png,Crystal3\crystal-plant31.png,Crystal3\crystal-plant32.png,Crystal3\crystal-plant33.png,Crystal3\crystal-plant34.png,Crystal3\crystal-plant35.png,Crystal3\crystal-plant36.png,Crystal3\crystal-plant37.png,Crystal3\crystal-plant38.png,Crystal3\crystal-plant39.png,Crystal3\crystal-plant4.png,Crystal3\crystal-plant40.png,Crystal3\crystal-plant41.png,Crystal3\crystal-plant42.png,Crystal3\crystal-plant43.png,Crystal3\crystal-plant44.png,Crystal3\crystal-plant45.png,Crystal3\crystal-plant46.png,Crystal3\crystal-plant47.png,Crystal3\crystal-plant48.png,Crystal3\crystal-plant49.png,Crystal3\crystal-plant5.png,Crystal3\crystal-plant50.png,Crystal3\crystal-plant51.png,Crystal3\crystal-plant52.png,Crystal3\crystal-plant53.png,Crystal3\crystal-plant54.png,Crystal3\crystal-plant55.png,Crystal3\crystal-plant56.png,Crystal3\crystal-plant57.png,Crystal3\crystal-plant58.png,Crystal3\crystal-plant59.png,Crystal3\crystal-plant6.png,Crystal3\crystal-plant60.png,Crystal3\crystal-plant61.png,Crystal3\crystal-plant62.png,Crystal3\crystal-plant63.png,Crystal3\crystal-plant64.png,Crystal3\crystal-plant7.png,Crystal3\crystal-plant8.png,Crystal3\crystal-plant9.png">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Reload" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Is Valid" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="120">
+   <BOUNDS type="Node" left="10350" top="7980" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="121" srcpinname="Texture Out" dstnodeid="120" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Transform Out" dstnodeid="120" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="117" srcpinname="Output" dstnodeid="121" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="Output" dstnodeid="121" dstpinname="Reload">
+   </LINK>
+   <NODE systemname="Renderer (DX11 TempTarget)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11 TempTarget)" componentmode="Hidden" id="123">
+   <BOUNDS type="Node" left="12600" top="10635" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Buffers" visible="1">
+   </PIN>
+   <PIN pinname="Target Format" slicecount="1" values="R16G16B16A16_Float">
+   </PIN>
+   <PIN pinname="Background Color" slicecount="1" values="|0.00000,0.00000,0.00000,0.00000|">
+   </PIN>
+   <PIN pinname="Texture SizeXY" visible="1" slicecount="2" values="1024,1024">
+   </PIN>
+   </NODE>
+   <NODE systemname="Levels (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\Levels.tfx" nodename="Levels (DX11.TextureFX)" componentmode="Hidden" id="122">
+   <BOUNDS type="Node" left="13845" top="11370" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="GammaXYZW" slicecount="4" values="2,2,2,2">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="123" srcpinname="Buffers" dstnodeid="122" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="120" srcpinname="Layer" dstnodeid="123" dstpinname="Layer">
+   </LINK>
+   <LINK srcnodeid="43" srcpinname="Output" dstnodeid="123" dstpinname="Texture SizeXY">
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="125">
+   <BOUNDS type="Node" left="8550" top="11550" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="-join-normals">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" slicecount="1" values=".png">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="124">
+   <BOUNDS type="Node" left="8355" top="12120" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="DosPath">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="125" srcpinname="Output" dstnodeid="124" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="124" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="125" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="Writer (DX11.Texture 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Writer (DX11.Texture 2d)" componentmode="Hidden" id="126">
+   <BOUNDS type="Node" left="8565" top="14445" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Format" slicecount="1" values="Png">
+   </PIN>
+   <PIN pinname="Write" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Filename" visible="1" slicecount="1" values="crystal-rock-join.png">
+   </PIN>
+   <PIN pinname="Valid" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="124" srcpinname="Output" dstnodeid="126" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Output" dstnodeid="126" dstpinname="Write">
+   </LINK>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="136">
+   <BOUNDS type="Node" left="10065" top="6300" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="113" srcpinname="Hits" dstnodeid="136" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="136" srcpinname="Output" dstnodeid="32" dstpinname="Select">
+   </LINK>
+   <NODE systemname="Select (String)" nodename="Select (String)" componentmode="Hidden" id="137">
+   <BOUNDS type="Node" left="9195" top="6075" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" visible="1" slicecount="514" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="95" srcpinname="Output" dstnodeid="137" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="137" srcpinname="Output" dstnodeid="32" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="137" srcpinname="Output" dstnodeid="117" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="113" srcpinname="Hits" dstnodeid="117" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Buffers" dstnodeid="106" dstpinname="Texture In">
+   </LINK>
+   <NODE id="140" systemname="Levels (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\Levels.tfx" nodename="Levels (DX11.TextureFX)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Texture Out" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Node" left="315" top="7560" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1" slicecount="1" pintype="Input" values="||">
+   </PIN>
+   <PIN pinname="GammaXYZW" slicecount="4" pintype="Input" visible="1" values="2,2,2,2">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" pintype="Input" visible="1" values="1">
+   </PIN>
+   <BOUNDS type="Box" left="0" top="0" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Path" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Do Save" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Depth In" pintype="Input" visible="-1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Use Default Size" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Default SizeXY" pintype="Input" visible="-1" slicecount="2" values="256,256">
+   </PIN>
+   <PIN pinname="Input Black" pintype="Input" visible="1" slicecount="1" values="|0.00000,0.00000,0.00000,0.00000|">
+   </PIN>
+   <PIN pinname="Input White" pintype="Input" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Output Black" pintype="Input" visible="1" slicecount="1" values="|0.00000,0.00000,0.00000,0.00000|">
+   </PIN>
+   <PIN pinname="Output White" pintype="Input" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Sampler" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Technique" pintype="Input" visible="1" slicecount="1" values="Levels">
+   </PIN>
+   <PIN pinname="Custom Semantics" pintype="Input" visible="-1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Resource Semantics" pintype="Input" visible="-1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Iteration Count" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Iterastion Count" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Defines" pintype="Input" visible="-1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output">
+   </PIN>
+   <PIN pinname="Technique Valid" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Compiled" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Query" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="56" srcpinname="Output Node" dstnodeid="140" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="140" srcpinname="Texture Out" dstnodeid="75" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="Select (String)" nodename="Select (String)" componentmode="Hidden" id="144">
+   <BOUNDS type="Node" left="7455" top="7470" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Sift (String)" nodename="Sift (String)" componentmode="Hidden" id="147">
+   <BOUNDS type="Node" left="11970" top="5850" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Filter" slicecount="1" visible="1" values="Normals-">
+   </PIN>
+   <PIN pinname="Comparison" slicecount="1" values="ContainsAny">
+   </PIN>
+   <PIN pinname="Hits" visible="1">
+   </PIN>
+   <PIN pinname="Input Index" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Cons (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (String)" componentmode="Hidden" id="148">
+   <BOUNDS type="Node" left="9765" top="12240" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="148" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="124" srcpinname="Output" dstnodeid="148" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="148" srcpinname="Output" dstnodeid="147" dstpinname="Filter">
+   </LINK>
+   <LINK srcnodeid="95" srcpinname="Output" dstnodeid="147" dstpinname="Input">
+   </LINK>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="149">
+   <BOUNDS type="Node" left="11955" top="6360" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="147" srcpinname="Hits" dstnodeid="149" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="149" srcpinname="Output" dstnodeid="137" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="24" dstpinname="Directory">
+   </LINK>
+   <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="152">
+   <BOUNDS type="Node" left="10125" top="7080" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Mode" slicecount="1" values="Disabled">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="152" srcpinname="Render State" dstnodeid="120" dstpinname="Render State">
+   </LINK>
+   <NODE systemname="SetAlpha (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\SetAlpha.tfx" nodename="SetAlpha (DX11.TextureFX)" componentmode="Hidden" id="153">
+   <BOUNDS type="Node" left="13815" top="12510" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Control" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="122" srcpinname="Texture Out" dstnodeid="153" dstpinname="Texture In">
+   </LINK>
+   <NODE systemname="DynamicTexture (DX11.Texture 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="DynamicTexture (DX11.Texture 2d)" componentmode="Hidden" id="154">
+   <BOUNDS type="Node" left="14370" top="12030" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Data" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="154" srcpinname="Texture Out" dstnodeid="153" dstpinname="Control">
+   </LINK>
+   <LINK srcnodeid="153" srcpinname="Texture Out" dstnodeid="126" dstpinname="Texture In">
+   </LINK>
+   <NODE systemname="SetAlpha (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\SetAlpha.tfx" nodename="SetAlpha (DX11.TextureFX)" componentmode="Hidden" id="158">
+   <BOUNDS type="Node" left="1275" top="8760" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Control" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (DX11.Texture 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="DynamicTexture (DX11.Texture 2d)" componentmode="Hidden" id="157">
+   <BOUNDS type="Node" left="1740" top="8340" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Data" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="157" srcpinname="Texture Out" dstnodeid="158" dstpinname="Control">
+   </LINK>
+   <LINK srcnodeid="112" srcpinname="Output" dstnodeid="158" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="158" srcpinname="Texture Out" dstnodeid="77" dstpinname="Normals In">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="166">
+   <BOUNDS type="Box" left="1680" top="6705" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1680" top="6705" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="EnableNormals">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="166" srcpinname="Y Output Value" dstnodeid="77" dstpinname="EnableNormals">
+   </LINK>
+   </PATCH>
