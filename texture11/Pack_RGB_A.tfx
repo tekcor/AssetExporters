@@ -1,0 +1,29 @@
+//@author: name
+//@help: Simple template for tfx
+//@tags: tfx, template
+//@credits: vvvv group
+
+struct vs2ps { float4 PosWVP: SV_POSITION; float2 uv: TEXCOORD0;};
+SamplerState LinearSampler: IMMUTABLE 
+{
+	Filter = MIN_MAG_MIP_LINEAR;
+	AddressU = Clamp;
+    AddressV = Clamp;
+};
+Texture2D InputTexture: PREVIOUS; 
+Texture2D tex2 <string uiname="Texture In 2";>;
+
+float2 R:TARGETSIZE; 
+
+float4 PassThrough(vs2ps vertexData): SV_Target
+{
+   	float4 c1 = InputTexture.Sample(LinearSampler, vertexData.uv);
+	float4 c2 = tex2.Sample(LinearSampler,vertexData.uv);
+	return float4(c1.r, c1.g, c1.b, c2.r);
+}
+
+technique10 Template 
+{
+	pass P0 
+	{ SetPixelShader(CompileShader(ps_4_0, PassThrough())); }
+} 
